@@ -27,7 +27,6 @@ body .curvy-bg {
 
 body ul {
     list-style-type: none;
-    ;
 }
 
 .wrapper {
@@ -366,7 +365,7 @@ nav ul li {
     color: var(--white);
     z-index : -1;
     position: absolute;
-    background-color: var(--intro);
+    background-color: var(--footer);
     clear: both;
     position: relative;
     margin-top: -1px;
@@ -374,6 +373,7 @@ nav ul li {
     text-align: center;
     display: flex;
     justify-content: center;
+    padding-bottom : 7rem;
 }
 
 .footer .wrapper {
@@ -381,11 +381,92 @@ nav ul li {
     height : auto;
     margin : 0 6rem;
     display: flex;
+    justify-content: space-around;
 }
 
 .footer .wrapper .first{
     display: flex;
     flex-direction: column;
+}
+
+.footer .wrapper .first img{
+    width : 50%;
+    margin-bottom : 1.5rem;
+}
+
+.footer .wrapper .first .location{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .wrapper .first .location img{
+    width : 15px;
+    height : 20px;
+    margin-right : 1rem;
+}
+
+.footer .wrapper .first .location p{
+    text-align: start;
+    font-family: var(--open-sans);
+}
+
+.footer .wrapper .second .contact{
+    display: flex;
+    margin-bottom : 0.5rem;
+}
+
+.footer .wrapper .second .contact:last-child{
+    margin-bottom : 0rem;
+}
+
+.footer .wrapper .second .contact img{
+    margin-right : 1rem;
+}
+
+.footer .wrapper .second .contact li{
+    font-family: var(--open-sans);
+    font-size : 11px;
+}
+
+.footer .wrapper .third {
+    font-family: var(--open-sans);
+    font-size : 11px;
+}
+
+.footer .wrapper .third li{
+    text-align: start;
+    margin-bottom : 0.2rem;
+    cursor: pointer;
+}
+
+.footer .wrapper .fourth {
+    font-family: var(--open-sans);
+    font-size : 11px;
+}
+
+.footer .wrapper .fourth li{
+    text-align: start;
+    margin-bottom : 0.2rem;
+    cursor: pointer;
+}
+
+.footer .wrapper .social-media-links img{
+    margin-right : 1rem;
+    cursor: pointer;
+}
+
+.footer .wrapper .social-media-links img:last-child{
+    margin-right : 0rem;
+}
+
+body .fill-the-gap{
+    width : 100%;
+    z-index : -1;
+    position: absolute;
+    height : 200px;
+    background: var(--footer);
+    top : 145rem;
+    padding-bottom: 7rem;
 }
 
 .attribution {
