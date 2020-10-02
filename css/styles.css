@@ -1,275 +1,391 @@
-:root{
-    --intro : hsl(217, 28%, 15%);
-    --main : hsl(218, 28%, 13%);
-    --footer : hsl(216, 53%, 9%);
-    --testimonials :hsl(219, 30%, 18%);
-    --cyan : hsl(176, 68%, 64%);
-    --blue : hsl(198, 60%, 50%);
-    --white : hsl(0, 0%, 100%);
-    --raleway : 'Raleway', sans-serif;
-    --open-sans : 'Open Sans', sans-serif;
+:root {
+    --intro: hsl(217, 28%, 15%);
+    --main: hsl(218, 28%, 13%);
+    --footer: hsl(216, 53%, 9%);
+    --testimonials: hsl(219, 30%, 18%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --raleway: 'Raleway', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
 }
 
-*{
-    margin : 0;
-    padding : 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     background-color: var(--intro);
 }
 
 body .curvy-bg {
-    width : 100%;
-    position : relative;
-    bottom : 6rem;
+    width: 100%;
+    position: relative;
+    bottom: 6rem;
 }
 
-.wrapper{
-    margin : 3rem;
+body ul {
+    list-style-type: none;
+    ;
 }
 
-nav{
+.wrapper {
+    margin: 3rem;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
 }
 
-nav .logo{
-    flex : 1;
+nav .logo {
+    flex: 1;
 }
 
-nav ul{
-    list-style-type : none;
+nav ul {
+    list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    flex : 1;
+    flex: 1;
 }
 
-nav ul li:first-child{
-    margin-left : 8rem;
+nav ul li:first-child {
+    margin-left: 8rem;
     color: var(--white);
 }
 
-nav ul li{
-    padding-right : 3rem;
+nav ul li {
+    padding-right: 3rem;
     color: var(--white);
     font-family: var(--raleway);
     font-size: 14px;
     cursor: pointer;
 }
 
-.wrapper .intro{
+.wrapper .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width : 100%;
+    width: 100%;
 }
 
 .wrapper .intro img {
-    width : 50%;
-    height : auto;
+    width: 50%;
+    height: auto;
     margin-bottom: 2rem;
-}   
+}
 
 .wrapper .intro h1 {
-    color : var(--white);
+    color: var(--white);
     font-family: var(--raleway);
     margin-bottom: 2rem;
     text-align: center;
 }
 
 .curvy-section {
-    position : relative;
+    position: relative;
 }
 
-.curvy-section .intro-para{
+.curvy-section .intro-para {
     position: absolute;
-    top : -2.8rem;
+    top: -2.8rem;
     width: 100%;
 }
 
-.curvy-section .intro-para p{
-    color : var(--white);
+.curvy-section .intro-para p {
+    color: var(--white);
     font-family: var(--raleway);
     text-align: center;
     font-size: 14px;
 }
 
-.curvy-section .button-container{
+.curvy-section .button-container {
     position: absolute;
-    top : 2.3rem;
+    top: 2.3rem;
     display: flex;
     justify-content: center;
-    width : 100%;
+    width: 100%;
 }
 
-.curvy-section .button-container button{
-    outline : none;
-    border : none;
-    border-radius : 35px;
-    padding : 0.7rem 3.5rem;
-    font-size : 11px;
+.curvy-section .button-container button {
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    padding: 0.7rem 3.5rem;
+    font-size: 11px;
     font-weight: bold;
     font-family: var(--raleway);
-    background: linear-gradient(to right, var(--cyan) , var(--blue));
+    background: linear-gradient(to right, var(--cyan), var(--blue));
     color: var(--white);
     cursor: pointer;
 }
 
-.curvy-section .grid-container{
+.curvy-section .grid-container {
     position: relative;
     background-color: var(--main);
-    bottom : 8rem;
+    bottom: 8rem;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
-    padding : 3rem 10rem;
+    padding: 3rem 10rem;
 }
 
-.curvy-section .grid-container .features-section{
+.curvy-section .grid-container .features-section {
     position: relative;
-    bottom : 4rem;
-    width : 100%;
-    height : 200px;
+    bottom: 4rem;
+    width: 100%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.curvy-section .grid-container .features-section img{
-    height : 65px;
-    width : auto;
-    margin-bottom : 1.4rem;
+.curvy-section .grid-container .features-section img {
+    height: 65px;
+    width: auto;
+    margin-bottom: 1.4rem;
 }
 
-.curvy-section .grid-container .features-section h4{
-    color : var(--white);
+.curvy-section .grid-container .features-section h4 {
+    color: var(--white);
     font-family: var(--raleway);
-    margin-bottom : 1.1rem;
+    margin-bottom: 1.1rem;
 }
 
-.curvy-section .grid-container .features-section p{
-    color : var(--white);
+.curvy-section .grid-container .features-section p {
+    color: var(--white);
     font-family: var(--raleway);
-    font-size : 11px;
+    font-size: 11px;
     text-align: center;
 }
 
-.post-curvy{
-    position : relative;
-    bottom : 11rem;
+.post-curvy {
+    position: relative;
+    bottom: 11rem;
     background-color: var(--main);
 }
 
-.post-curvy .wrapper{
-    display : flex;
+.post-curvy .wrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 6rem;
 }
 
-.post-curvy .image-productive{
+.post-curvy .image-productive {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex : 1;
+    flex: 1;
 }
 
-.post-curvy .image-productive img{
-    width : 75%;
+.post-curvy .image-productive img {
+    width: 75%;
     position: relative;
-    left : 4rem;
+    left: 4rem;
 }
 
-.post-curvy .productive-description{
+.post-curvy .productive-description {
     position: relative;
-    left : 3rem;
+    left: 3rem;
     display: flex;
     flex-direction: column;
-    flex : 1;
+    flex: 1;
 }
 
-.post-curvy .productive-description .prod-header{ 
-    color : var(--white);
+.post-curvy .productive-description .prod-header {
+    color: var(--white);
     font-family: var(--raleway);
     margin-bottom: 1.5rem;
 }
-.post-curvy .productive-description .prod-para{
-    color : var(--white);
+
+.post-curvy .productive-description .prod-para {
+    color: var(--white);
     font-family: var(--raleway);
     font-size: 12px;
     margin-bottom: 1.5rem;
 }
-.post-curvy .productive-description .prod-link a{
+
+.post-curvy .productive-description .prod-link a {
     font-family: var(--raleway);
-    font-size : 12px;
+    font-size: 12px;
     color: var(--blue);
 }
 
-.testimonials{
-    width : 100%;
-    background-color: var(--main);    
-    position : relative;
-    bottom : 14rem;
-    padding-bottom : 2rem;
+.testimonials {
+    width: 100%;
+    background-color: var(--main);
+    position: relative;
+    bottom: 14rem;
+    padding-bottom: 14rem;
 }
 
-.testimonials .wrapper{
+.testimonials .wrapper {
     display: flex;
     margin: 0 4rem;
 }
 
-.testimonials .wrapper .user-review{
+.testimonials .wrapper .quotes-image {
+    position: relative;
+    left: 30px;
+    bottom: 50px;
+}
+
+.testimonials .wrapper .user-review {
+    z-index: 1;
     border-radius: 2px;
-    margin : 0 2rem 0 0;
-    padding : 2rem;
+    margin: 0 2rem 0 0;
+    padding: 2rem;
     background-color: var(--testimonials);
     display: flex;
     flex-direction: column;
-    flex : 1;
+    flex: 1;
+    margin-bottom: 1rem;
 }
 
-.testimonials .wrapper .user-review:last-child{
+.testimonials .wrapper .user-review:last-child {
     margin-right: 2rem;
 }
 
-.testimonials .wrapper .user-review:first-child{
+.testimonials .wrapper .user-review:first-child {
     margin-left: 2rem;
 }
 
-.testimonials .wrapper .user-review p,h5,span{
+.testimonials .wrapper .user-review p, h5, span {
     color: var(--white);
     font-family: var(--raleway);
 }
 
-.testimonials .wrapper .user-review h5{
+.testimonials .wrapper .user-review h5 {
     font-family: var(--open-sans);
 }
 
-.testimonials .wrapper .user-review .review-para p{
+.testimonials .wrapper .user-review .review-para p {
     font-size: 14px;
     font-family: var(--open-sans);
 }
 
-.testimonials .wrapper .user-review span{
+.testimonials .wrapper .user-review span {
     font-size: 12px;
 }
 
 .testimonials .wrapper .user-review .customer-details {
-    margin-top : 1rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
 }
 
-.testimonials .wrapper .user-review .customer-details img{
-    height : 25px;
-    width : 25px;
+.testimonials .wrapper .user-review .customer-details img {
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
-    margin : 0 0.5rem 0.4rem 0;
+    margin: 0 0.5rem 0.4rem 0;
+}
+
+.testimonials .get-started {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 6rem;
+    top : 300px;
+}
+
+.get-started .wrapper {
+    width: 60%;
+    background-color: var(--intro);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2px;
+    -webkit-box-shadow: 10px 9px 11px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 9px 11px -4px rgba(0, 0, 0, 1);
+    box-shadow: 10px 9px 11px -4px rgba(0, 0, 0, 1);
+}
+
+.get-started .wrapper h2, p, button {
+    color: var(--white);
+    font-family: var(--raleway);
+}
+
+.get-started .wrapper .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.get-started .wrapper .para p {
+    margin: 0 3rem;
+    font-size: 12px;
+    text-align: center;
+}
+
+.get-started .wrapper .para p {
+    margin-bottom: 1.5rem;
+}
+
+.get-started .wrapper .form {
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-started .wrapper .form .text-field {
+    padding: 0 4rem 0 2rem;
+    flex : 1;
+}
+
+.get-started .wrapper .form .text-field .tbox {
+    height : 30px;
+    width : 100%;
+    border: none;
+    outline : none;
+    background: var(--white);
+    border-radius: 25px;
+    padding-left : 1rem;
+}
+
+.get-started .wrapper .form button {
+    outline : none;
+    border: none;
+    background: linear-gradient(to right, var(--cyan), var(--blue));
+    padding : 0 1rem;
+    border-radius: 25px;
+    font-size : 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    color: var(--white);
+    z-index : -1;
+    position: absolute;
+    background-color: var(--intro);
+    clear: both;
+    position: relative;
+    margin-top: -1px;
+    font-size : 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .wrapper {
+    width : 100%;
+    height : auto;
+    margin : 0 6rem;
+    display: flex;
+}
+
+.footer .wrapper .first{
+    display: flex;
+    flex-direction: column;
 }
 
 .attribution {
