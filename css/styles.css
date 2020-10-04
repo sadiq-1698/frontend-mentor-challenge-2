@@ -29,6 +29,10 @@ body ul {
     list-style-type: none;
 }
 
+.wrapper-container {
+    width: 1284px;
+}
+
 .wrapper {
     margin: 3rem;
 }
@@ -292,7 +296,7 @@ nav ul li {
     justify-content: center;
     padding: 2rem;
     margin: 0 6rem;
-    top : 300px;
+    top: 300px;
 }
 
 .get-started .wrapper {
@@ -329,33 +333,34 @@ nav ul li {
 }
 
 .get-started .wrapper .form {
-    width : 100%;
+    height: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .get-started .wrapper .form .text-field {
     padding: 0 4rem 0 2rem;
-    flex : 1;
+    flex: 1;
 }
 
 .get-started .wrapper .form .text-field .tbox {
-    height : 30px;
-    width : 100%;
+    height: 30px;
+    width: 100%;
     border: none;
-    outline : none;
+    outline: none;
     background: var(--white);
     border-radius: 25px;
-    padding-left : 1rem;
+    padding-left: 1rem;
 }
 
 .get-started .wrapper .form button {
-    outline : none;
+    outline: none;
     border: none;
     background: linear-gradient(to right, var(--cyan), var(--blue));
-    padding : 0 1rem;
+    padding: 0 1rem;
     border-radius: 25px;
-    font-size : 10px;
+    font-size: 10px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -363,117 +368,281 @@ nav ul li {
 .footer {
     display: flex;
     color: var(--white);
-    z-index : -1;
+    z-index: -1;
     position: absolute;
     background-color: var(--footer);
     clear: both;
     position: relative;
     margin-top: -1px;
-    font-size : 10px;
+    font-size: 10px;
     text-align: center;
     display: flex;
     justify-content: center;
-    padding-bottom : 7rem;
+    padding-bottom: 7rem;
 }
 
 .footer .wrapper {
-    width : 100%;
-    height : auto;
-    margin : 0 6rem;
+    width: 100%;
+    height: auto;
+    margin: 0 6rem;
     display: flex;
     justify-content: space-around;
 }
 
-.footer .wrapper .first{
+.footer .wrapper .first {
     display: flex;
     flex-direction: column;
 }
 
-.footer .wrapper .first img{
-    width : 50%;
-    margin-bottom : 1.5rem;
+.footer .wrapper .first img {
+    width: 50%;
+    margin-bottom: 1.5rem;
 }
 
-.footer .wrapper .first .location{
+.footer .wrapper .first .location {
     display: flex;
     justify-content: space-between;
 }
 
-.footer .wrapper .first .location img{
-    width : 15px;
-    height : 20px;
-    margin-right : 1rem;
+.footer .wrapper .first .location img {
+    width: 15px;
+    height: 20px;
+    margin-right: 1rem;
 }
 
-.footer .wrapper .first .location p{
+.footer .wrapper .first .location p {
     text-align: start;
     font-family: var(--open-sans);
 }
 
-.footer .wrapper .second .contact{
+.footer .wrapper .second .contact {
     display: flex;
-    margin-bottom : 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.footer .wrapper .second .contact:last-child{
-    margin-bottom : 0rem;
+.footer .wrapper .second .contact:last-child {
+    margin-bottom: 0rem;
 }
 
-.footer .wrapper .second .contact img{
-    margin-right : 1rem;
+.footer .wrapper .second .contact img {
+    margin-right: 1rem;
 }
 
-.footer .wrapper .second .contact li{
+.footer .wrapper .second .contact li {
     font-family: var(--open-sans);
-    font-size : 11px;
+    font-size: 11px;
 }
 
 .footer .wrapper .third {
     font-family: var(--open-sans);
-    font-size : 11px;
+    font-size: 11px;
 }
 
-.footer .wrapper .third li{
+.footer .wrapper .third li {
     text-align: start;
-    margin-bottom : 0.2rem;
+    margin-bottom: 0.2rem;
     cursor: pointer;
 }
 
 .footer .wrapper .fourth {
     font-family: var(--open-sans);
-    font-size : 11px;
+    font-size: 11px;
 }
 
-.footer .wrapper .fourth li{
+.footer .wrapper .fourth li {
     text-align: start;
-    margin-bottom : 0.2rem;
+    margin-bottom: 0.2rem;
     cursor: pointer;
 }
 
-.footer .wrapper .social-media-links img{
-    margin-right : 1rem;
+.footer .wrapper .social-media-links i {
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius : 50%;
+    font-size: 12px;
+    padding: 10px;
+    border : 1px solid var(--white);
+    color : var(--white);
     cursor: pointer;
 }
-
-.footer .wrapper .social-media-links img:last-child{
-    margin-right : 0rem;
+.footer .wrapper .social-media-links i:first-child {
+    padding : 10px 13px;
 }
 
-body .fill-the-gap{
-    width : 100%;
-    z-index : -1;
+.footer .wrapper .social-media-links img:last-child {
+    margin-right: 0rem;
+}
+
+.fill-the-gap {
+    width: 100%;
+    z-index: -1;
     position: absolute;
-    height : 200px;
+    height: 200px;
     background: var(--footer);
-    top : 145rem;
+    top: 145rem;
     padding-bottom: 7rem;
 }
 
 .attribution {
+    background-color: var(--footer);
     font-size: 11px;
     text-align: center;
+    padding-bottom: 0.5rem;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+    .testimonials .get-started {
+        top: 320px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .fill-the-gap {
+        top: 140rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .fill-the-gap {
+        top: 135rem;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .testimonials .get-started {
+        top: 330px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .testimonials .get-started {
+        top: 340px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .testimonials .get-started {
+        top: 355px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .get-started .wrapper .form {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .get-started .wrapper .form button {
+        width: 100%;
+        height: 40px;
+    }
+    .get-started .wrapper .form .text-field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    .get-started .wrapper .form .text-field {
+        margin-bottom: 1.5rem;
+    }
+    .get-started .wrapper .form .text-field .tbox {
+        width: 100%;
+        height: 40px;
+    }
+    .testimonials .get-started {
+        top: 335px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .testimonials .wrapper .user-review .review-para p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .fill-the-gap {
+        top: 130rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .post-curvy .wrapper .productive-description .prod-para br.dont-stay {
+        display: none;
+    }
+    .post-curvy .wrapper .productive-description .prod-para {
+        width: 80%;
+    }
+    .curvy-section .grid-container .features-section:nth-child(1) {
+        margin-right: 2rem;
+    }
+    .curvy-section .grid-container .features-section:nth-child(3) {
+        margin-right: 2rem;
+    }
+    .curvy-section .grid-container .features-section:nth-child(2) {
+        margin-left: 2rem;
+    }
+    .curvy-section .grid-container .features-section:nth-child(4) {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    nav ul li {
+        font-size: 12px;
+    }
+    .curvy-section .grid-container .features-section p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .wrapper .first, .second, .third, .fourth, .social-media-links {
+        margin-bottom: 2rem;
+    }
+    .footer .wrapper .first img {
+        display: flex;
+        justify-content: start;
+    }
+    .footer .wrapper .first .location {
+        display: flex;
+        justify-content: start;
+    }
+    .footer .wrapper .first .location p {
+        font-size: 170%;
+    }
+    .footer .wrapper .first .location img {
+        width: 20px;
+        height: 25px;
+    }
+    .footer .wrapper .second .contact li {
+        font-size: 170%;
+    }
+    .footer .wrapper .second .contact img {
+        width: 25px;
+        height: 25px;
+    }
+    .footer .wrapper .third li {
+        font-size: 170%;
+    }
+    .footer .wrapper .fourth li {
+        font-size: 170%;
+    }
+    .footer .wrapper .social-media-links {
+        display: flex;
+        justify-content: center;
+    }
 }
