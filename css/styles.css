@@ -76,6 +76,10 @@ nav ul li {
     width: 100%;
 }
 
+img.curvy-mobile-bg {
+    display: none;
+}
+
 .wrapper .intro img {
     width: 50%;
     height: auto;
@@ -87,6 +91,7 @@ nav ul li {
     font-family: var(--raleway);
     margin-bottom: 2rem;
     text-align: center;
+    z-index: 100;
 }
 
 .curvy-section {
@@ -458,15 +463,16 @@ nav ul li {
 .footer .wrapper .social-media-links i {
     margin-right: 1rem;
     cursor: pointer;
-    border-radius : 50%;
+    border-radius: 50%;
     font-size: 12px;
     padding: 10px;
-    border : 1px solid var(--white);
-    color : var(--white);
+    border: 1px solid var(--white);
+    color: var(--white);
     cursor: pointer;
 }
+
 .footer .wrapper .social-media-links i:first-child {
-    padding : 10px 13px;
+    padding: 10px 13px;
 }
 
 .footer .wrapper .social-media-links img:last-child {
@@ -566,7 +572,6 @@ nav ul li {
     .testimonials .wrapper .user-review .review-para p {
         font-size: 12px;
     }
-
 }
 
 @media screen and (max-width: 980px) {
@@ -602,6 +607,37 @@ nav ul li {
     }
     .curvy-section .grid-container .features-section p {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .footer .wrapper {
+        justify-content: space-between;
+    }
+    .footer .wrapper .first p {
+        font-size: 10px;
+    }
+    .footer .wrapper .second li {
+        font-size: 10px;
+    }
+    .footer .wrapper .third li {
+        font-size: 10px;
+    }
+    .footer .wrapper .fourth li {
+        font-size: 10px;
+    }
+    .footer .wrapper .social-media-links i {
+        font-size: 10px;
+        padding: 8px;
+    }
+    .footer .wrapper .social-media-links i:first-child {
+        padding: 8px 11px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    nav ul li {
+        padding-right: 2rem;
     }
 }
 
@@ -645,4 +681,111 @@ nav ul li {
         display: flex;
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 850px) {
+    .testimonials .get-started {
+        top: 355px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .fill-the-gap {
+        top: 150rem;
+    }
+    .testimonials .wrapper {
+        flex-direction: column;
+        margin: 0 12rem;
+    }
+    .testimonials .wrapper .user-review {
+        margin: 0;
+    }
+    .testimonials .wrapper .user-review:last-child {
+        margin-right: 0;
+    }
+    .testimonials .wrapper .user-review {
+        margin-bottom: 2rem;
+    }
+    .testimonials .get-started {
+        margin: 0 0rem;
+        top: 675px;
+    }
+    .testimonials .wrapper .quotes-image {
+        left: 20px;
+        bottom: -4px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .curvy-section .grid-container {
+        padding: 3rem 8rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .post-curvy .image-productive img {
+        left: 2rem;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 785px) {
+    img.curvy-bg {
+        display: none;
+    }
+    img.curvy-mobile-bg {
+        display: block;
+        width: 100%;
+        position: relative;
+        bottom: 6rem;
+    }
+    .curvy-section .grid-container {
+        position: relative;
+        background-color: var(--main);
+        bottom: 8rem;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 0rem;
+    }
+    .curvy-section .grid-container .features-section{
+        margin-right : 0;
+        margin-left : 0;
+    }
+    .curvy-section .grid-container .features-section:nth-child(1){
+        margin-right : 0;
+        margin-left : 0;
+    }
+    .curvy-section .grid-container .features-section:nth-child(2){
+        margin-right : 0;
+        margin-left : 0;
+    }
+    .curvy-section .grid-container .features-section:nth-child(3){
+        margin-right : 0;
+        margin-left : 0;
+    }
+    .curvy-section .grid-container .features-section:nth-child(4){
+        margin-right : 0;
+        margin-left : 0;
+    }
+    .curvy-section .grid-container .features-section p {
+        font-size: 12px;
+    }
+
+    .get-started .wrapper {
+        width: 100%;
+        margin : 0 6rem;
+    }
+    .testimonials .wrapper .quotes-image {
+        height : 40px;
+        width : 40px;
+    }
+    .fill-the-gap {
+        top: 175rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    
 }
