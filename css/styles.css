@@ -29,10 +29,6 @@ body ul {
     list-style-type: none;
 }
 
-.wrapper-container {
-    width: 1284px;
-}
-
 .wrapper {
     margin: 3rem;
 }
@@ -130,6 +126,7 @@ img.curvy-mobile-bg {
     background: linear-gradient(to right, var(--cyan), var(--blue));
     color: var(--white);
     cursor: pointer;
+    z-index: 100;
 }
 
 .curvy-section .grid-container {
@@ -749,43 +746,142 @@ img.curvy-mobile-bg {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 0rem;
     }
-    .curvy-section .grid-container .features-section{
-        margin-right : 0;
-        margin-left : 0;
+    .curvy-section .grid-container .features-section {
+        margin-right: 0;
+        margin-left: 0;
     }
-    .curvy-section .grid-container .features-section:nth-child(1){
-        margin-right : 0;
-        margin-left : 0;
+    .curvy-section .grid-container .features-section:nth-child(1) {
+        margin-right: 0;
+        margin-left: 0;
     }
-    .curvy-section .grid-container .features-section:nth-child(2){
-        margin-right : 0;
-        margin-left : 0;
+    .curvy-section .grid-container .features-section:nth-child(2) {
+        margin-right: 0;
+        margin-left: 0;
     }
-    .curvy-section .grid-container .features-section:nth-child(3){
-        margin-right : 0;
-        margin-left : 0;
+    .curvy-section .grid-container .features-section:nth-child(3) {
+        margin-right: 0;
+        margin-left: 0;
     }
-    .curvy-section .grid-container .features-section:nth-child(4){
-        margin-right : 0;
-        margin-left : 0;
+    .curvy-section .grid-container .features-section:nth-child(4) {
+        margin-right: 0;
+        margin-left: 0;
     }
     .curvy-section .grid-container .features-section p {
         font-size: 12px;
     }
-
     .get-started .wrapper {
         width: 100%;
-        margin : 0 6rem;
+        margin: 0 6rem;
     }
     .testimonials .wrapper .quotes-image {
-        height : 40px;
-        width : 40px;
+        height: 40px;
+        width: 40px;
     }
     .fill-the-gap {
         top: 175rem;
     }
 }
 
-@media screen and (max-width: 765px) {
-    
+@media screen and (max-width: 776px) {
+    nav ul li:first-child {
+        margin-left: 4rem;
+        color: var(--white);
+    }
+    nav ul li {
+        padding-right: 2rem;
+        color: var(--white);
+        font-family: var(--raleway);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 400px;
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper {
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    nav .logo {
+        padding-left: 0.8rem;
+        flex: 1;
+    }
+    nav .logo img {
+        width: 60%;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+    }
+    nav ul li:first-child {
+        margin-left: 0rem;
+        color: var(--white);
+    }
+    nav ul li {
+        padding-right: 1.5rem;
+        color: var(--white);
+        font-family: var(--raleway);
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .wrapper .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .wrapper .intro img {
+        width: 80%;
+        margin-bottom: 2.5rem;
+    }
+    .wrapper .intro h1 {
+        width: 90%;
+    }
+    .wrapper .intro h1 br {
+        display: none;
+    }
+    .curvy-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .curvy-section .intro-para {
+        margin : 1.8rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width : 69%;
+    }
+    .curvy-section .intro-para p br{
+        display: none;
+    }
+    .curvy-section .intro-para p br{
+        display: none;
+    }
+    .curvy-section .button-container{
+        height : 80px;
+        top : 3.3rem;
+        background-color: var(--main);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .curvy-section .grid-container{
+        width : 100%;
+        bottom : 4rem;
+        margin : 1rem 0;
+    }
 }
