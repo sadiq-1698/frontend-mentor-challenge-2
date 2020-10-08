@@ -797,7 +797,7 @@ img.curvy-mobile-bg {
 
 @media screen and (max-width: 400px) {
     body {
-        width: 400px;
+        width: 100%;
         margin: 0;
         padding: 0;
     }
@@ -853,35 +853,105 @@ img.curvy-mobile-bg {
     .wrapper .intro h1 br {
         display: none;
     }
-    .curvy-section{
+    .curvy-section {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .curvy-section .intro-para {
-        margin : 1.8rem 0;
+        margin: 1.8rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        width : 69%;
+        width: 69%;
     }
-    .curvy-section .intro-para p br{
+    .curvy-section .intro-para p br {
         display: none;
     }
-    .curvy-section .intro-para p br{
-        display: none;
-    }
-    .curvy-section .button-container{
-        height : 80px;
-        top : 3.3rem;
+    .curvy-section .button-container {
+        height: 80px;
+        top: 3.3rem;
         background-color: var(--main);
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .curvy-section .grid-container{
-        width : 100%;
-        bottom : 4rem;
-        margin : 1rem 0;
+    .curvy-section .grid-container {
+        width: 100%;
+        bottom: 1.2rem;
+        padding: 8rem 0;
+    }
+    .curvy-section .grid-container .features-section {
+        margin-bottom: 3rem;
+    }
+    .curvy-section .grid-container .features-section:last-child {
+        margin-bottom: 0;
+    }
+    .curvy-section .grid-container .features-section p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+    .curvy-section .grid-container .features-section p br {
+        display: none;
+    }
+    .post-curvy {
+        padding-top: 3rem;
+    }
+    .post-curvy .wrapper {
+        flex-direction: column;
+    }
+    .post-curvy .wrapper .image-productive img {
+        left: 0;
+    }
+    .post-curvy .wrapper .productive-description {
+        left: 0;
+        padding: 3rem 3rem 3rem 2rem;
+    }
+    .post-curvy .wrapper .productive-description .prod-header {
+        display: flex;
+        justify-content: center;
+    }
+    .post-curvy .wrapper .productive-description .prod-header h1 {
+        font-size: 110%;
+    }
+    .post-curvy .wrapper .productive-description .prod-header h1 br {
+        display: none;
+    }
+    .post-curvy .wrapper .productive-description .prod-para {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 105%;
+    }
+    .post-curvy .wrapper .productive-description .prod-para p {
+        font-size: 15px;
+    }
+    .testimonials {
+        max-width: 100%;
+        margin: 0;
+        padding-bottom: 20rem;
+    }
+    .testimonials .wrapper {
+        max-width: 100%;
+        margin: 0;
+    }
+    .testimonials .wrapper .user-review:last-child {
+        margin-right: 1.7rem;
+    }
+    .testimonials .wrapper .user-review:first-child {
+        margin-left: 0;
+    }
+    .testimonials .wrapper .user-review {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 100%;
+    }
+    .testimonials .get-started {
+        top: 800px;
+    }
+    .fill-the-gap {
+        top: 208rem;
     }
 }
