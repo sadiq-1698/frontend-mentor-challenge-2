@@ -378,7 +378,6 @@ img.curvy-mobile-bg {
     margin-top: -1px;
     font-size: 10px;
     text-align: center;
-    display: flex;
     justify-content: center;
     padding-bottom: 7rem;
 }
@@ -607,6 +606,12 @@ img.curvy-mobile-bg {
     }
 }
 
+@media screen and (max-width: 888px) {
+    .fill-the-gap {
+        top: 128rem;
+    }
+}
+
 @media screen and (max-width: 880px) {
     .footer .wrapper {
         justify-content: space-between;
@@ -642,6 +647,7 @@ img.curvy-mobile-bg {
     .footer .wrapper {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
     .footer .wrapper .first, .second, .third, .fourth, .social-media-links {
         margin-bottom: 2rem;
@@ -795,7 +801,76 @@ img.curvy-mobile-bg {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 742px) {
+    .get-started {
+        top: 730px!important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .testimonials .wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .fill-the-gap {
+        top: 170rem;
+    }
+    .get-started {
+        top: 680px!important;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .post-curvy .image-productive img {
+        left: 1rem;
+    }
+    .post-curvy .productive-description {
+        left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .curvy-section .grid-container {
+        margin-top: 2rem;
+        padding-top: 4rem;
+    }
+    .fill-the-gap {
+        height: 500px;
+        top: 160rem;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    nav ul li:last-child {
+        padding-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    nav ul li:first-child {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .get-started {
+        top: 715px!important;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    nav ul li:first-child {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .wrapper nav ul li {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
     body {
         width: 100%;
         margin: 0;
@@ -836,6 +911,9 @@ img.curvy-mobile-bg {
         font-size: 12px;
         cursor: pointer;
     }
+    nav ul li:last-child {
+        padding-right: 1.5rem;
+    }
     .wrapper .intro {
         display: flex;
         flex-direction: column;
@@ -865,21 +943,29 @@ img.curvy-mobile-bg {
         align-items: center;
         width: 69%;
     }
+    .curvy-section .intro-para p {
+        z-index: 50;
+    }
     .curvy-section .intro-para p br {
         display: none;
     }
     .curvy-section .button-container {
         height: 80px;
-        top: 3.3rem;
+        top: 3.1rem;
         background-color: var(--main);
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 5rem;
     }
+    /* .curvy-section .button-container button{
+        margin-top : 3.5rem;
+    } */
     .curvy-section .grid-container {
         width: 100%;
         bottom: 1.2rem;
         padding: 8rem 0;
+        margin-top: 0;
     }
     .curvy-section .grid-container .features-section {
         margin-bottom: 3rem;
@@ -932,8 +1018,8 @@ img.curvy-mobile-bg {
         padding-bottom: 20rem;
     }
     .testimonials .wrapper {
-        max-width: 100%;
-        margin: 0;
+        width: 100%;
+        margin: 0 auto;
     }
     .testimonials .wrapper .user-review:last-child {
         margin-right: 1.7rem;
@@ -950,8 +1036,117 @@ img.curvy-mobile-bg {
     }
     .testimonials .get-started {
         top: 800px;
+        padding: 0.5rem;
+    }
+    .testimonials .get-started {
+        top: 800px!important;
+        margin: 0 1rem;
+    }
+    .get-started .wrapper .para p {
+        margin: 0 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 12px;
+        text-align: center;
     }
     .fill-the-gap {
         top: 208rem;
+    }
+    .footer {
+        min-width: 100%!important;
+        max-width: 100%!important;
+    }
+    .footer .wanimasa {
+        min-width: 100%!important;
+        max-width: 100%!important;
+        width: 384px;
+        overflow: hidden;
+        margin: 0;
+    }
+    .footer .wrapper .first {
+        min-width: 90%!important;
+        max-width: 90%!important;
+    }
+    .footer .wrapper .first {
+        padding-left: 2rem;
+        min-width: 90%!important;
+        max-width: 90%!important;
+    }
+    .footer .wrapper .second {
+        padding-left: 2rem;
+    }
+    .footer .wrapper .third {
+        padding-left: 2rem;
+    }
+    .footer .wrapper .fourth {
+        padding-left: 2rem;
+    }
+    .footer .wrapper .social-media-links {
+        padding-left: 2rem;
+    }
+    .footer .wrapper .first .location p {
+        max-width: 90%!important;
+        width: 90%!important;
+        padding-right: 0!important;
+        margin-right: 0!important;
+        text-align: start;
+        font-family: var(--open-sans);
+    }
+    .footer .wrapper .first .location p br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .testimonials .get-started {
+        top: 840px!important;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    .curvy-section .button-container {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .thin-fill-the-gap {
+        height: 40px;
+        width: 100%;
+        position: absolute;
+        background-color: var(--main);
+        top: 550px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .fill-the-gap {
+        top: 200rem;
+    }
+    .testimonials .get-started .wrapper p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .testimonials .get-started .wrapper .header {
+        min-width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .thin-fill-the-gap {
+        height: 60px;
+        top: 538px;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .curvy-section .button-container {
+        padding-top: 1.7rem;
+    }
+    .thin-fill-the-gap {
+        height: 60px;
+        top: 526px;
     }
 }
